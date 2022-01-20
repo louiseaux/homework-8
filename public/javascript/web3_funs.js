@@ -8,7 +8,7 @@ let web3;
 let encodeNft;
 async function init() {
     // Smart contract ABI
-    const nftAbi = require('../../build/contracts/EncodeErc721.json');
+    const nftAbi = require('../../build/contracts/EncodeToken.json');
     // Initialise web3 library
     web3 = new Web3(process.env.INFURA_RINKEBY);
 
