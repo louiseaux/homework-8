@@ -1,4 +1,5 @@
 const Web3 = require('web3');
+const fs = require('fs');
 
 // Set variables here for reuse
 const ownerPub = process.env.OWNER_PUB;
@@ -8,7 +9,8 @@ let web3;
 let encodeNft;
 async function init() {
     // Smart contract ABI
-    const nftAbi = require('../../build/contracts/EncodeToken.json');
+    const contract = JSON.parse(fs.readFileSync('./build/contracts/EncodeToken.json', 'utf8'));
+    const nftAbi = contract.abi;
     // Initialise web3 library
     web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
 
