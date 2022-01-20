@@ -2,7 +2,7 @@ const Web3 = require('web3');
 
 // Set variables here for reuse
 const ownerPub = process.env.OWNER_PUB;
-const erc721Address = "0x457Ddf4b4853C64BbbfA63bADa62092E93577B13";
+const erc721Address = "0xEf2d5617d9e8cdb968a2f9A44E5E42C38355f140";
 
 let web3;
 let encodeNft;
@@ -10,7 +10,7 @@ async function init() {
     // Smart contract ABI
     const nftAbi = require('../../build/contracts/EncodeToken.json');
     // Initialise web3 library
-    web3 = new Web3(process.env.INFURA_RINKEBY);
+    web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
 
     // Add credentials
     web3.eth.accounts.wallet.add({
