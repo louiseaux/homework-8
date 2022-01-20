@@ -7,5 +7,27 @@
     "it-all": "^1.0.6",
     "path": "^0.12.7",
     "web3": "^1.7.0"
-  }
+  },
+  "name": "homework8",
+  "description": "",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louiseaux/Homework8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louiseaux/Homework8/issues"
+  },
+  "homepage": "https://github.com/louiseaux/Homework8#readme"
 }
